@@ -1,3 +1,15 @@
+Ansible Installation :
+
+Master :
+1.Ansible installation 
+2.Generate "key-gen" in Master ec2, copy the output in notepad (add "ssh root@privateslaveip") and paste this in "authorized keys" file in host.
+3.Update "hosts" file in master with slave ip(public ip)
+
+Slave : 
+1.python installation
+2.authorized key updation with Master's "key-gen"
+
+
 on Master :
 ==========
 sudo apt-get update
@@ -19,7 +31,7 @@ ssh-keygen  => this command is used to genereate key for particualr machine
 ls
 id_rsa id_rsa.pub 
 
-We need to put code from id_rsa.pub to authorized keys on slave by adding thw below lines at end.
+We need to put code from id_rsa.pub to "authorized keys" on slave by adding thw below lines at end.
 
 ssh root@<ipaddres_slave>
 
