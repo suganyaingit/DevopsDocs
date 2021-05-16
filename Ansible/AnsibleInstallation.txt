@@ -1,4 +1,7 @@
 Ansible Installation :
+both master & slave [Redhat distribution]
+yum update
+
 
 Master :
 1.Ansible installation 
